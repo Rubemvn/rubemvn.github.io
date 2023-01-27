@@ -3,7 +3,7 @@
     --color-01: #000714;
     --color-01-1: #000a1d53;
     --color-02: #000d28;
-    --color-03: #3f3f3f;
+    --color-03: #435f99;
     --color-04: #00143b;
     --color-05: #002b82;
     --color-06: #0055ff;
@@ -20,9 +20,30 @@
     background-color: var(--color-02);
     font-family: 'Kanit', sans-serif;
     color: var(--color-00);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 a {
     text-decoration: none;
     color: var(--color-00);
+}
+
+.button {
+    background-color: var(--color-06);
+    color: var(--color-00);
+    padding: 5px 25px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.2em;
+    ;
+}
+
+.button:hover {
+    transition: 350ms;
+    -webkit-box-shadow: 0px 0px 15px 2px var(--color-06);
+    -moz-box-shadow: 0px 0px 15px 2px var(--color-06);
+    box-shadow: 0px 0px 15px 2px var(--color-06);
 }

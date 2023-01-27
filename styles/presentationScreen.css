@@ -1,0 +1,40 @@
+
+.welcomeScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20vw;
+    max-width: 90vw;
+    gap: 10vw;
+}
+
+.containerWelcomeMessage h1 {
+    font-size: 4em;
+    font-weight: 400;
+    line-height: 90%;
+}
+
+.containerWelcomeMessage p {
+    color: var(--color-03);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.welcomeButtons a {
+    font-size: 1.2em;
+    padding: 5px 25px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 25px;
+}
+
+.welcomeButtons a:hover {
+    transition: 350ms;
+    -webkit-box-shadow: 0px 0px 10px 1px var(--color-00);
+    -moz-box-shadow: 0px 0px 10px 1px var(--color-00);
+    box-shadow: 0px 0px 10px 1px var(--color-00);
+}
+
+#imgLaptopDev {
+    max-width: 40vw;
+}

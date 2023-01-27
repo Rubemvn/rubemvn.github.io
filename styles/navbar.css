@@ -1,0 +1,26 @@
+
+.navBar {
+    background-color: var(--color-01-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.navBarLogo {
+    padding: 2.5%;
+}
+
+.navBarLogo img {
+    width: 50%;
+}
+
+.navBarOptions a {
+    font-size: 1.3em;
+    padding-right: 3vw;
+}
+
+.navBarOptions a:hover {
+    transition: 200ms;
+    color: var(--color-07);
+}

@@ -1,0 +1,28 @@
+:root {
+    --color-00: #ffffff;
+    --color-01: #000714;
+    --color-01-1: #000a1d53;
+    --color-02: #000d28;
+    --color-03: #3f3f3f;
+    --color-04: #00143b;
+    --color-05: #002b82;
+    --color-06: #0055ff;
+    --color-07: #97baff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    background-color: var(--color-02);
+    font-family: 'Kanit', sans-serif;
+    color: var(--color-00);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-00);
+}

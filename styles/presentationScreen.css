@@ -6,6 +6,7 @@
     margin-bottom: 10%;
     max-width: 90vw;
     gap: 10vw;
+    user-select: none;
 }
 
 .containerWelcomeMessage h1 {
@@ -39,4 +40,5 @@
 
 #imgLaptopDev {
     max-width: 40vw;
+    pointer-events: none;
 }

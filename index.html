@@ -53,7 +53,9 @@
                     <a id="linkedIn" href="#">LinkedIn</a>
                 </div>
             </div>
-            <img id="imgLaptopDev" src="./images/content/DEV-02.png" alt="NotebookDev">
+            <div id="vanilla-teste">
+                <img id="imgLaptopDev" src="./images/content/DEV-02.png" alt="NotebookDev">
+            </div>
         </section>
         <!-- Fim da Apresentação -->
 
@@ -152,11 +154,21 @@
         </section>
 
         <footer class="footer">
-            <p>© rubemvieira - Todos os dieritos reservados</p>
+            <p>© rubemvieira - Todos os direitos reservados</p>
         </footer>
     </div>
 
     <script src="./scripts/script.js"></script>
+    <script type="text/javascript" src="./scripts/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector("#vanilla-teste"), {
+            max: 25,
+            speed: 400
+        });
+
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll("#vanilla-teste"));
+    </script>
 </body>
 
 </html>

@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20vw;
+    margin-bottom: 10%;
     max-width: 90vw;
     gap: 10vw;
 }
@@ -14,7 +14,7 @@
     line-height: 90%;
 }
 
-.containerWelcomeMessage p {
+.containerWelcomeMessage h2 {
     color: var(--color-03);
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -25,14 +25,15 @@
     padding: 5px 25px;
     border-radius: 5px;
     border: none;
-    margin-left: 25px;
+    margin-left: 10px;
+    transition: all 350ms;
 }
 
 .welcomeButtons a:hover {
-    transition: 350ms;
-    -webkit-box-shadow: 0px 0px 10px 1px var(--color-00);
-    -moz-box-shadow: 0px 0px 10px 1px var(--color-00);
-    box-shadow: 0px 0px 10px 1px var(--color-00);
+    background-color: var(--color-04);
+    -webkit-box-shadow: 0px 0px 10px 1px var(--color-00-1);
+    -moz-box-shadow: 0px 0px 10px 1px var(--color-00-1);
+    box-shadow: 0px 0px 10px 1px var(--color-00-1);
 }
 
 #imgLaptopDev {

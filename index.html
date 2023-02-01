@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/presentationScreen.css">
+    <link rel="stylesheet" href="./styles/aboutMe.css">
 </head>
 
 <body>
@@ -29,6 +30,7 @@
                     <img id src="./images/icons/New-R-2-icon.png" alt="logo-R">
                 </a>
             </div>
+            <!-- Fim dos Icons -->
 
             <!-- Options -->
             <div class="navBarOptions">
@@ -36,48 +38,62 @@
                 <a href="#">Projetos</a>
                 <a href="#">Certificados</a>
                 <a href="#">Contato</a>
-                </ul>
             </div>
+            <!-- Fim de Options -->
         </nav>
+        <!-- Fim da Barra de navegação -->
 
         <!-- Apresentação -->
-        <div class="welcomeScreen">
+        <section class="welcomeScreen">
             <div class="containerWelcomeMessage">
                 <h1 id="welcomeMessage">Olá, sou<br>Rúbem Vieira</h1>
-                <p>Desenvolvedor FullStack</p>
+                <h2>Desenvolvedor FullStack</h2>
                 <div class="welcomeButtons">
-                    <button class="button" id="downloadCV" href="#">Download CV</button>
+                    <button class="button" id="Github" onclick="redirectToGithub()">GitHub</button>
                     <a id="linkedIn" href="#">LinkedIn</a>
                 </div>
             </div>
             <img id="imgLaptopDev" src="./images/content/DEV-02.png" alt="NotebookDev">
-        </div>
+        </section>
+        <!-- Fim da Apresentação -->
 
-        <div class="aboutMe">
-            <h4>Sobre Mim</h4>
+        <!-- Sobre mim -->
+        <section class="aboutMe">
+            <h2>Sobre Mim</h2>
             <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                 scrambled it to make a type specimen book.
             </p>
             <div class="myContact">
-                <div class="myName">
-                    <div class="animatedCircle"></div>
+                <div class="cardContact">
+                    <div class="animatedCircle">
+                        <div class="innerCircle"></div>
+                    </div>
+                    <p><b>Nome Completo</b></p>
                     <p>Rúbem Vieira Nunes</p>
                 </div>
-                <div class="myEmail">
-                    <div class="animatedCircle"></div>
+                <div class="cardContact">
+                    <div class="animatedCircle">
+                        <div class="innerCircle"></div>
+                    </div>
+                    <p><b>E-mail</b></p>
                     <p>rubemvn17@gmail.com</p>
                 </div>
-                <div class="myGithub">
-                    <div class="animatedCircle"></div>
+                <div class="cardContact">
+                    <div class="animatedCircle">
+                        <div class="innerCircle"></div>
+                    </div>
+                    <p><b>Github</b></p>
                     <p>@Rubemvn</p>
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- Fim de Sobre mim -->
 
-        <div class="iAmContainer">
-            <h3>Oque eu faço</h3>
+        <!-- Oque eu Faço -->
+        <section class="iAmContainer">
+            <h2>Oque eu faço</h2>
             <div class="skills">
                 <div class="card">
                     <img src="" alt="">
@@ -92,9 +108,10 @@
                     <p>Software Student</p>
                 </div>
             </div>
-        </div>
-
-        <div class="mySkills">
+        </section>
+        <!-- Fim de Oque eu Faço -->
+        
+        <section class="mySkills">
             <div class="cardSkill">
                 <img src="./images/icons/" alt="">
                 <p>HTML</p>
@@ -119,24 +136,27 @@
                 <img src="./images/icons/" alt="">
                 <p>Git</p>
             </div>
-        </div>
+        </section>
+
+        <section class="contactMe">
+            <div class="form">
+                <input type="text" placeholder="Nome" class="contactInput">
+                <input type="text" placeholder="Sobrenome" class="contactInput">
+                <input type="text" placeholder="Endereço de e-mail" class="contactInput">
+                <input type="text" placeholder="Número de celular" class="contactInput">
+                <textarea id="message" cols="80" rows="10" placeholder="Mensagem"></textarea>
+            </div>
+            <button class="send">
+                Enviar
+            </button>
+        </section>
     </div>
 
-    <div class="contactMe">
-        <div class="form">
-            <input type="text" placeholder="Nome" class="contactInput">
-            <input type="text" placeholder="Sobrenome" class="contactInput">
-            <input type="text" placeholder="Endereço de e-mail" class="contactInput">
-            <input type="text" placeholder="Número de celular" class="contactInput">
-            <textarea id="message" cols="80" rows="10" placeholder="Mensagem"></textarea>
-        </div>
-        <button class="send">
-            Enviar
-        </button>
-    </div>
     <footer class="footer">
         <p>© rubemvieira - Todos os dieritos reservados</p>
     </footer>
+
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>

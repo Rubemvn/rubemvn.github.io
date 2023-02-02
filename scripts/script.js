@@ -4,10 +4,10 @@ function redirectToGithub(){
 }
 
 
-VanillaTilt.init(document.querySelector(".cardiAm"), {
+VanillaTilt.init(document.querySelector(".vanillaTilt"), {
     max: 25,
     speed: 400
 });
 
 //It also supports NodeList
-VanillaTilt.init(document.querySelectorAll(".cardiAm"));
+VanillaTilt.init(document.querySelectorAll(".vanillaTilt"));

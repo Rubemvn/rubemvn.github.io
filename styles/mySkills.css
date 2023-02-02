@@ -1,0 +1,51 @@
+.mySkills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 15%;
+}
+
+.mySkills h2 {
+    font-size: 3em;
+    font-weight: 400;
+    margin: 15% 0 5% 0;
+}
+
+.contentSkills{
+    background-color: var(--color-04);
+    display: grid;
+    grid-gap: 180px;
+    grid-row-gap: 100px;
+    grid-template: auto auto/ auto auto auto;
+    padding: 70px;
+    
+    -webkit-box-shadow: 0px 0px 86px -4px #0000003b;
+    -moz-box-shadow: 0px 0px 86px -4px #0000003b;
+    box-shadow: 0px 0px 86px -4px #0000003b;
+}
+
+.cardSkill{
+    transition: all .3s ease-in-out;
+    filter: grayscale(1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 130px;
+    border-radius: 10px;
+}
+
+.cardSkill img{
+    width: 120px;
+    margin-bottom: 20px;
+    letter-spacing: normal;
+}
+.cardSkill p{
+    font-size: 1.5rem;
+}
+
+.cardSkill:hover{
+    filter: grayscale(0);
+    letter-spacing: 5px;
+}

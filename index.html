@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/presentationScreen.css">
     <link rel="stylesheet" href="./styles/aboutMe.css">
+    <link rel="stylesheet" href="./styles/iAm.css">
 </head>
 
 <body>
@@ -89,6 +90,13 @@
                     <p><b>Github</b></p>
                     <p>@Rubemvn</p>
                 </div>
+                <div class="cardContact">
+                    <div class="animatedCircle">
+                        <div class="innerCircle"></div>
+                    </div>
+                    <p><b>Celular</b></p>
+                    <p>(86)99933-2609</p>
+                </div>
             </div>
         </section>
         <!-- Fim de Sobre mim -->
@@ -97,48 +105,62 @@
         <section class="iAmContainer">
             <h2>Oque eu faço</h2>
             <div class="skills">
-                <div class="card">
-                    <img src="" alt="">
-                    <p>Software Development</p>
+                <div class="cardiAm">
+                    <div class="cardiAmContent">
+                        <img src="./images/icons/designer-de-web (2).png" alt="">
+                        <p>Software<br>Development</p>
+                    </div>
+                    <div class="animatedBar"></div>
                 </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <p>Web Development</p>
+                <div class="cardiAm">
+                    <div class="cardiAmContent">
+                        <img src="./images/icons/www.png" alt="">
+                        <p>Web<br>Development</p>
+                    </div>
+                    <div class="animatedBar"></div>
                 </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <p>Software Student</p>
+                <div class="cardiAm">
+                    <div class="cardiAmContent">
+                        <img src="./images/icons/classificacao.png" alt="">
+                        <p>Software<br>Student</p>
+                    </div>
+                    <div class="animatedBar"></div>
                 </div>
             </div>
         </section>
         <!-- Fim de Oque eu Faço -->
 
+        <!-- My Skills -->
         <section class="mySkills">
-            <div class="cardSkill">
-                <img src="./images/icons/" alt="">
-                <p>HTML</p>
-            </div>
-            <div class="cardSkill">
-                <img src="./images/icons/" alt="">
-                <p>CSS</p>
-            </div>
-            <div class="cardSkill">
-                <img src="./images/icons/" alt="">
-                <p>JavaScript</p>
-            </div>
-            <div class="cardSkill">
-                <img src="./images/icons/" alt="">
-                <p>Node</p>
-            </div>
-            <div class="cardSkill">
-                <img src="./images/icons/" alt="">
-                <p>Express</p>
-            </div>
-            <div class="cardSkill">
-                <img src="./images/icons/" alt="">
-                <p>Git</p>
+            <h2>Minhas Skills</h2>
+            <div class="contentSkills">
+                <div class="cardSkill">
+                    <img src="./images/icons/" alt="">
+                    <p>HTML</p>
+                </div>
+                <div class="cardSkill">
+                    <img src="./images/icons/" alt="">
+                    <p>CSS</p>
+                </div>
+                <div class="cardSkill">
+                    <img src="./images/icons/" alt="">
+                    <p>JavaScript</p>
+                </div>
+                <div class="cardSkill">
+                    <img src="./images/icons/" alt="">
+                    <p>Node</p>
+                </div>
+                <div class="cardSkill">
+                    <img src="./images/icons/" alt="">
+                    <p>Git</p>
+                </div>
+                <div class="cardSkill">
+                    <img src="./images/icons/" alt="">
+                    <p>GitHub</p>
+                </div>
             </div>
         </section>
+        <!-- Fim de My Skills -->
 
         <section class="contactMe">
             <div class="form">
@@ -158,17 +180,8 @@
         </footer>
     </div>
 
-    <script src="./scripts/script.js"></script>
     <script type="text/javascript" src="./scripts/vanilla-tilt.js"></script>
-    <script type="text/javascript">
-        VanillaTilt.init(document.querySelector("#vanilla-teste"), {
-            max: 25,
-            speed: 400
-        });
-
-        //It also supports NodeList
-        VanillaTilt.init(document.querySelectorAll("#vanilla-teste"));
-    </script>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>

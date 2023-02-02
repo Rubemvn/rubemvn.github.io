@@ -1,6 +1,6 @@
 :root {
     --color-00: #ffffff;
-    --color-00-1: #ffffff8b;
+    --color-00-1: #ffffff63;
     --color-01: #000714;
     --color-01-1: #000a1d53;
     --color-02: #000d28;
@@ -62,3 +62,4 @@ a {
     -moz-box-shadow: 0px 0px 15px 2px var(--color-06);
     box-shadow: 0px 0px 15px 2px var(--color-06);
 }
+

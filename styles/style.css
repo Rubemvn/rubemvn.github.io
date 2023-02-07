@@ -4,6 +4,7 @@
     --color-01: #000714;
     --color-01-1: #000a1d53;
     --color-02: #000d28;
+    --color-02-1: #000e2d;
     --color-03: #435f99;
     --color-04: #00143b;
     --color-05: #002b82;
@@ -63,3 +64,14 @@ a {
     box-shadow: 0px 0px 15px 2px var(--color-06);
 }
 
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    background-color: var(--color-02-1);
+}
+
+footer p {
+    color: var(--color-00-1);
+}

@@ -64,6 +64,42 @@ a {
     box-shadow: 0px 0px 15px 2px var(--color-06);
 }
 
+/* navBar CONTAINER*/
+
+.navBar {
+    background-color: var(--color-01-1);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    margin-bottom: 18vh;
+    box-sizing: border-box;
+
+}
+
+.navBarLogo {
+    padding: 2.5%;
+}
+
+.navBarLogo img {
+    width: 50%;
+}
+
+.navBarOptions a {
+    font-size: 1.3em;
+    padding-left: 3vw;
+}
+
+.navBarOptions a:hover {
+    transition: 200ms;
+    color: var(--color-07);
+}
+
+/* welcomeScreen SECTION */
+
+
+
 footer {
     width: 100%;
     display: flex;

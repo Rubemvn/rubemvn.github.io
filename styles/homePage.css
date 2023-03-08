@@ -12,10 +12,22 @@
     --color-07: #97baff;
 }
 
-* {
+
+html {
+    /* a cada 1rem será considerado 10px */
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100vh;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
 }
 
 body::-webkit-scrollbar {
@@ -53,7 +65,7 @@ a {
     border-radius: 5px;
     border: none;
     font-family: 'Kanit', sans-serif;
-    font-size: 1.2em;
+    font-size: 2rem;
     transition: all 350ms;
 }
 
@@ -73,13 +85,13 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 0 10%;
-    margin-bottom: 18vh;
+    margin-bottom: 10rem;
     box-sizing: border-box;
 
 }
 
 .navBarLogo {
-    padding: 2.5%;
+    padding: 2rem;
 }
 
 .navBarLogo img {
@@ -87,7 +99,7 @@ a {
 }
 
 .navBarOptions a {
-    font-size: 1.3em;
+    font-size: 2rem;
     padding-left: 3vw;
 }
 
@@ -104,14 +116,15 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10%;
+    margin-bottom: 17rem;
     max-width: 90vw;
     gap: 10vw;
     user-select: none;
 }
 
 .containerWelcomeMessage h1 {
-    font-size: 4em;
+    font-size: 6rem;
+    margin: 0;
     font-weight: 400;
     line-height: 90%;
 }
@@ -119,12 +132,13 @@ a {
 .containerWelcomeMessage h2 {
     color: var(--color-03);
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 2.4rem;
+    margin: 0;
     margin-bottom: 1rem;
 }
 
 .welcomeButtons a {
-    font-size: 1.2em;
+    font-size: 2rem;
     padding: 5px 25px;
     border-radius: 5px;
     border: none;
@@ -137,6 +151,7 @@ a {
     -webkit-box-shadow: 0px 0px 10px 1px var(--color-00-1);
     -moz-box-shadow: 0px 0px 10px 1px var(--color-00-1);
     box-shadow: 0px 0px 10px 1px var(--color-00-1);
+    background-color: var(--color-03);
 }
 
 #imgLaptopDev {
@@ -154,23 +169,23 @@ a {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 60vw;
+    max-width: 70vw;
+    margin-bottom: 17rem;
 }
 
 .aboutMe h2 {
-    font-size: 3em;
+    font-size: 6rem;
     font-weight: 400;
-    margin: 1em 0;
 }
 
 .aboutMe p {
-    font-size: 20px;
+    font-size: 2rem;
     margin: 5% 0;
 }
 
 .animatedCircle {
-    width: 3em;
-    height: 3em;
+    width: 5rem;
+    height: 5rem;
     background-color: var(--color-04);
     margin: 0 0 5% 0;
     display: flex;
@@ -180,15 +195,15 @@ a {
 
 
 .innerCircle {
-    width: 0.5em;
-    height: 0.5em;
+    width: 0.8rem;
+    height: 0.8rem;
     background-color: var(--color-06);
     transition: all 0.8s ease-in-out;
 }
 
 .animatedCircle:hover .innerCircle {
-    width: 3em;
-    height: 3em;
+    width: 5rem;
+    height: 5rem;
 }
 
 .myContact {
@@ -218,25 +233,24 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 10%;
+    margin-bottom: 17rem;
 }
 
 .iAmContainer h2 {
-    font-size: 3em;
+    font-size: 6rem;
     font-weight: 400;
-    margin: 15% 0 5% 0;
 }
 
 .skills {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
+    font-size: 4rem;
+    line-height: 4rem;
     color: var(--color-00-1);
     font-weight: 300;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 75vw;
-    gap: 3rem;
+    gap: 5rem;
 }
 
 .cardiAm {
@@ -244,6 +258,7 @@ a {
     width: 100%;
     max-width: 400px;
     min-width: 250px;
+    margin-bottom: 5rem;
 
     -webkit-box-shadow: 0px 0px 86px -4px #0000003b;
     -moz-box-shadow: 0px 0px 86px -4px #0000003b;
@@ -256,6 +271,10 @@ a {
 .cardiAmContent {
     padding: 20px;
     transform: translateZ(20px);
+}
+
+.cardiAmContent p{
+margin: 0;
 }
 
 .cardiAm div img {
@@ -284,13 +303,13 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 15%;
+    margin-bottom: 17rem;
 }
 
 .mySkills h2 {
     font-size: 3em;
     font-weight: 400;
-    margin: 15% 0 5% 0;
+    margin: 5rem 0;
 }
 
 .contentSkills {
@@ -299,7 +318,7 @@ a {
     grid-gap: 180px;
     grid-row-gap: 100px;
     grid-template: auto auto/ auto auto auto;
-    padding: 70px;
+    padding: 7rem;
 
     -webkit-box-shadow: 0px 0px 86px -4px #0000003b;
     -moz-box-shadow: 0px 0px 86px -4px #0000003b;
@@ -314,22 +333,21 @@ a {
     align-items: center;
     flex-direction: column;
     width: 130px;
-    border-radius: 10px;
 }
 
 .cardSkill img {
     width: 120px;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     letter-spacing: normal;
 }
 
 .cardSkill p {
-    font-size: 1.5rem;
+    font-size: 2.4rem;
 }
 
 .cardSkill:hover {
     filter: grayscale(0);
-    letter-spacing: 5px;
+    letter-spacing: .5rem;
 }
 
 /* mySkills SECTION END*/
@@ -343,13 +361,13 @@ a {
     flex-direction: column;
     width: 100%;
     max-width: 50vw;
-    margin-bottom: 100px;
+    margin-bottom: 10rem;
 }
 
 .contactMe h2 {
-    font-size: 3em;
+    font-size: 6rem;
     font-weight: 400;
-    margin: 15% 0 5% 0;
+    margin: 5rem 0;
 }
 
 .form {
@@ -375,7 +393,7 @@ div input {
     background-color: #ffffff00;
     border: none;
     border-bottom: 3px solid var(--color-04);
-    font-size: 1rem;
+    font-size: 1.6rem;
     color: var(--color-00);
     padding-left: 5px;
     padding-top: 5px;
@@ -404,6 +422,8 @@ div input:focus {
 
 /* contactMe SECTION END*/
 
+
+/* footer */
 footer {
     width: 100%;
     display: flex;
@@ -415,3 +435,4 @@ footer {
 footer p {
     color: var(--color-00-1);
 }
+/* footer END*/

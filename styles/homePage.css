@@ -273,8 +273,8 @@ a {
     transform: translateZ(20px);
 }
 
-.cardiAmContent p{
-margin: 0;
+.cardiAmContent p {
+    margin: 0;
 }
 
 .cardiAm div img {
@@ -434,4 +434,5 @@ footer {
 footer p {
     color: var(--color-00-1);
 }
+
 /* footer END*/

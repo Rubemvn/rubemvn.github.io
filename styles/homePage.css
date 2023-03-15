@@ -364,7 +364,7 @@ a {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    max-width: 50%;
+    max-width: 65%;
     margin-bottom: 10rem;
 }
 
@@ -443,7 +443,137 @@ footer p {
 /* footer END*/
 
 
+/* MEDIA SCREEN */
 
-@media screen and (max-width: 1500px){
-    
+/* 1300px */
+@media screen and (max-width: 1300px) {
+    .myContact {
+        display: grid;
+        grid-template: 1fr 1fr/ 1fr 1fr;
+        row-gap: 50px;
+    }
+
+    .skills {
+        font-size: 3.5rem;
+        width: 85%;
+    }
+
+    .contactMe {
+        max-width: 75%;
+    }
 }
+
+@media screen and (max-width: 1000px) {
+    .welcomeScreen {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    #imgLaptopDev {
+        min-width: 400px;
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+
+    .contentSkills {
+        display: grid;
+        grid-gap: 180px;
+        grid-row-gap: 50px;
+        grid-template: auto auto auto/ auto auto;
+        padding: 7rem;
+    }
+
+    .contactMe {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navBar {
+        margin-bottom: 5rem;
+    }
+
+    .navBarLogo img {
+        width: 40px;
+    }
+
+    .containerWelcomeMessage h1 {
+        font-size: 5rem;
+    }
+
+    .myContact {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .contentSkills {
+        grid-gap: 100px;
+
+    }
+
+    .cardSkill {
+        width: 110px;
+    }
+
+    .cardSkill img {
+        width: 100px;
+        margin-bottom: 1.5rem;
+    }
+
+    .contactMe {
+        max-width: 75%;
+    }
+
+    .form div {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .containerWelcomeMessage h1 {
+        font-size: 4rem;
+    }
+
+    #imgLaptopDev {
+        min-width: 300px;
+    }
+
+    .aboutMe h2,
+    .iAmContainer h2,
+    .mySkills h2,
+    .contactMe h2 {
+        font-size: 4rem;
+    }
+
+    .contentSkills {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .cardSkill {
+        width: 140px;
+    }
+
+    .cardSkill img {
+        width: 130px;
+        margin-bottom: 1.5rem;
+    }
+
+    .contactMe {
+        max-width: 90%;
+        text-align: center;
+    }
+
+
+}
+
+
+
+
+
+/* MEDIA SCREEN END*/

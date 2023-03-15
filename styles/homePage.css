@@ -452,31 +452,32 @@ footer p {
         grid-template: 1fr 1fr/ 1fr 1fr;
         row-gap: 50px;
     }
-
+    
     .skills {
         font-size: 3.5rem;
         width: 85%;
     }
-
+    
     .contactMe {
         max-width: 75%;
     }
 }
 
+/* 1000px */
 @media screen and (max-width: 1000px) {
     .welcomeScreen {
         flex-direction: column-reverse;
         gap: 20px;
     }
-
+    
     #imgLaptopDev {
         min-width: 400px;
     }
-
+    
     .skills {
         flex-direction: column;
     }
-
+    
     .contentSkills {
         display: grid;
         grid-gap: 180px;
@@ -484,60 +485,62 @@ footer p {
         grid-template: auto auto auto/ auto auto;
         padding: 7rem;
     }
-
+    
     .contactMe {
         max-width: 80%;
     }
 }
 
+/* 768px */
 @media screen and (max-width: 768px) {
     .navBar {
         margin-bottom: 5rem;
     }
-
+    
     .navBarLogo img {
         width: 40px;
     }
-
+    
     .containerWelcomeMessage h1 {
         font-size: 5rem;
     }
-
+    
     .myContact {
         display: flex;
         flex-direction: column;
         gap: 100px;
     }
-
+    
     .contentSkills {
         grid-gap: 100px;
-
+        
     }
-
+    
     .cardSkill {
         width: 110px;
     }
-
+    
     .cardSkill img {
         width: 100px;
         margin-bottom: 1.5rem;
     }
-
+    
     .contactMe {
         max-width: 75%;
     }
-
+    
     .form div {
         display: flex;
         flex-direction: column;
     }
 }
 
+/* 520px */
 @media screen and (max-width: 520px) {
     .containerWelcomeMessage h1 {
         font-size: 4rem;
     }
-
+    
     #imgLaptopDev {
         min-width: 300px;
     }
@@ -571,9 +574,4 @@ footer p {
 
 
 }
-
-
-
-
-
 /* MEDIA SCREEN END*/

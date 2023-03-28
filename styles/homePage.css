@@ -3,6 +3,7 @@
     --color-00-1: #ffffff63;
     --color-01: #000714;
     --color-01-1: #000a1d53;
+    --color-01-2: #000a1dbe;
     --color-02: #000d28;
     --color-02-1: #000e2d;
     --color-03: #435f99;
@@ -99,6 +100,10 @@ a {
 
 .navBarLogo img {
     width: 60px;
+}
+
+.navBarOptions {
+    display: flex;
 }
 
 .navBarOptions a {
@@ -392,6 +397,12 @@ a {
     margin-bottom: 50px;
 }
 
+.form p {
+    font-size: 3rem;
+    font-weight: 100;
+    color: #d14848;
+}
+
 .form textarea,
 div input {
     background-color: #ffffff00;
@@ -438,6 +449,7 @@ footer {
 footer p {
     color: var(--color-00-1);
     font-weight: 100;
+    text-align: center;
 }
 
 /* footer END*/
@@ -452,12 +464,12 @@ footer p {
         grid-template: 1fr 1fr/ 1fr 1fr;
         row-gap: 50px;
     }
-    
+
     .skills {
         font-size: 3.5rem;
         width: 85%;
     }
-    
+
     .contactMe {
         max-width: 75%;
     }
@@ -469,15 +481,15 @@ footer p {
         flex-direction: column-reverse;
         gap: 20px;
     }
-    
+
     #imgLaptopDev {
         min-width: 400px;
     }
-    
+
     .skills {
         flex-direction: column;
     }
-    
+
     .contentSkills {
         display: grid;
         grid-gap: 180px;
@@ -485,7 +497,7 @@ footer p {
         grid-template: auto auto auto/ auto auto;
         padding: 7rem;
     }
-    
+
     .contactMe {
         max-width: 80%;
     }
@@ -495,52 +507,128 @@ footer p {
 @media screen and (max-width: 768px) {
     .navBar {
         margin-bottom: 5rem;
+        align-items: center;
     }
-    
+
     .navBarLogo img {
         width: 40px;
     }
-    
+
     .containerWelcomeMessage h1 {
         font-size: 5rem;
     }
-    
+
     .myContact {
         display: flex;
         flex-direction: column;
         gap: 100px;
     }
-    
+
     .contentSkills {
         grid-gap: 100px;
-        
+
     }
-    
+
     .cardSkill {
         width: 110px;
     }
-    
+
     .cardSkill img {
         width: 100px;
         margin-bottom: 1.5rem;
     }
-    
+
     .contactMe {
         max-width: 75%;
     }
-    
+
     .form div {
         display: flex;
         flex-direction: column;
     }
+
+
+    .navBarOptions {
+        display: none;
+    }
+
+    /* MENU TOGGLE */
+    .menuToggle {
+        width: 40px;
+        height: 40px;
+        margin-right: 10%;
+    }
+
+    .one,
+    .two,
+    .three {
+        background-color: var(--color-00);
+        height: 3px;
+        width: 100%;
+        margin: 9px auto;
+
+        transition-duration: .35s;
+    }
+
+    /* Clicado */
+
+    .menuSection.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100vw;
+        height: 100vh;
+
+        background-color: var(--color-02);
+
+
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menuSection.on .navBarOptions {
+        display: block;
+        text-align: center;
+        margin-bottom: 150px;
+        transition-duration: .6s;
+    }
+
+    .menuSection.on .navBarOptions a {
+        font-size: 3rem;
+        line-height: 10rem;
+        display: block;
+    }
+
+    .menuSection.on .menuToggle {
+        position: absolute;
+        top: 15px;
+        right: 0;
+    }
+
+    .menuSection.on .menuToggle .one {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menuSection.on .menuToggle .two {
+        opacity: 0;
+    }
+
+    .menuSection.on .menuToggle .three {
+        transform: rotate(-45deg) translate(10px, -10px);
+    }
 }
+
+/* MENU TOGGLE FIM */
 
 /* 520px */
 @media screen and (max-width: 520px) {
     .containerWelcomeMessage h1 {
         font-size: 4rem;
     }
-    
+
     #imgLaptopDev {
         min-width: 300px;
     }
@@ -574,4 +662,5 @@ footer p {
 
 
 }
+
 /* MEDIA SCREEN END*/

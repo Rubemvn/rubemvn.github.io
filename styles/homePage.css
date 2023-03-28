@@ -619,9 +619,9 @@ footer p {
     .menuSection.on .menuToggle .three {
         transform: rotate(-45deg) translate(10px, -10px);
     }
-}
 
-/* MENU TOGGLE FIM */
+    /* MENU TOGGLE END */
+}
 
 /* 520px */
 @media screen and (max-width: 520px) {

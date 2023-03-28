@@ -28,11 +28,11 @@ body {
     background-color: var(--color-02);
     display: flex;
     justify-content: center;
+    scroll-behavior: smooth;
 }
 
 body {
     font-size: 1.6rem;
-    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {

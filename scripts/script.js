@@ -2,10 +2,6 @@
 function redirectToGithub(){
     window.open("https://github.com/Rubemvn");
 }
-function redirectToDownloadCv(){
-    window.open("https://drive.google.com/file/d/164sHGiCSQg7sDBUgl45ErIACMWAw6eXU/view?usp=sharing");
-}
-
 
 VanillaTilt.init(document.querySelector(".vanillaTilt"), {
     max: 25,

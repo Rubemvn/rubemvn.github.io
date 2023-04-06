@@ -176,16 +176,19 @@
         <section id="contato" class="contactMe">
             <h2>Entre em contato</h2>
             <div class="form">
-                <p>*em breve</p>
-                <div>
-                    <input type="text" placeholder="Nome" class="contactInput">
-                    <input type="text" placeholder="Sobrenome" class="contac    tInput">
-                    <input type="text" placeholder="Endereço de e-mail" class="contactInput">
-                    <input type="text" placeholder="Número de celular" class="contactInput">
-                </div>
-                <textarea id="message" placeholder="Mensagem"></textarea>
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <input type="hidden" name="accessKey" value="296d6ac9-4882-4707-9b34-907c81ba90a2">
+                    <input type="hidden" name="redirectTo" value="https://rubemvn.github.io/">
+
+                    <input type="text" name="name" placeholder="Nome" class="contactInput">
+                    <input type="text" name="subject" placeholder="Assunto" class="contactInput">
+                    <input type="text" name="email" placeholder="Endereço de e-mail" class="contactInput">
+                    <input type="text" name="phone" placeholder="Número de celular" class="contactInput">
+                    <textarea id="message" placeholder="Mensagem"></textarea>
+                    
+                    <input type="submit" class="submit"></input>
+                </form>
             </div>
-            <button class="button">ENVIAR</button>
         </section>
         <!-- Fim de Contact Me -->
 

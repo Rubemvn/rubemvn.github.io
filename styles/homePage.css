@@ -146,6 +146,10 @@ a {
     margin-bottom: 1rem;
 }
 
+.welcomeButtons{
+    display: flex;
+}
+
 .welcomeButtons a {
     font-size: 2rem;
     padding: 5px 25px;
@@ -661,7 +665,15 @@ footer p {
         text-align: center;
     }
 
+    .welcomeButtons {
+        display: grid;
+        grid-template: 1fr/ 1fr 1fr;
+        gap: 5px;
+    }
 
 }
 
+@media screen and (max-width: 520px) {
+    
+}
 /* MEDIA SCREEN END*/

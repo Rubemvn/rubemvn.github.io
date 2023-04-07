@@ -194,7 +194,9 @@ a {
 
 .aboutMe p {
     font-size: 2rem;
+    font-weight: 100;
     margin: 5% 0;
+    opacity: .7;
 }
 
 .animatedCircle {

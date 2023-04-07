@@ -8,6 +8,7 @@
     --color-02-1: #000e2d;
     --color-03: #435f99;
     --color-04: #00143b;
+    --color-04-1: #00194b;
     --color-05: #002b82;
     --color-06: #0055ff;
     --color-07: #97baff;
@@ -30,7 +31,7 @@ body {
     scroll-behavior: smooth;
 
 
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 body {
@@ -101,7 +102,7 @@ a {
     padding: 0 10%;
     margin-bottom: 10rem;
     box-sizing: border-box;
-    /* opacity: 0.2; */
+    filter: blur(3px);
 }
 
 .navBarLogo {
@@ -138,14 +139,13 @@ a {
     grid-template: 1fr 1fr /1fr 1fr 1fr;
     row-gap: 40px;
     column-gap: 20px;
-    /* opacity: .2; */
+    filter: blur(3px);
+
 }
 
 .project {
     display: flex;
     flex-direction: column;
-    /* width: 300px; */
-    /* height: 180px; */
     box-shadow: 0px 5px 20px #0000005e;
     background-color: var(--color-04);
 }
@@ -153,7 +153,6 @@ a {
 
 .project img {
     width: 300px;
-    /* margin: 0 0 2px 0; */
 }
 
 .project h3 {
@@ -194,14 +193,13 @@ a {
 
 .cover {
     background-color: var(--color-02);
-    opacity: .5;
+    opacity: .7;
     width: 100vw;
     height: 100vh;
     position: absolute;
     top: 0;
     right: 0;
     z-index: 1;
-    ;
 }
 
 .extras {
@@ -217,18 +215,31 @@ a {
     flex-direction: column;
     justify-content: start;
     position: absolute;
-    /* top: 80; */
     top: -100px;
-    margin: auto;
+    margin: 0px;
     width: 500px;
-    height: 600px;
-    background-color: var(--color-06);
+    background-color: var(--color-04);
     z-index: 2;
 }
 
 .extraProjectSection img {
     width: 500px;
     height: fit-content;
+}
+
+.imagesExtraSection {
+    position: relative;
+}
+
+#imgClose {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 0;
+}
+
+#imgClose img {
+    width: 30px;
 }
 
 .title {
@@ -246,8 +257,46 @@ a {
 }
 
 .title div img {
-    width: 35px;
-    margin-left: 10px;
+    width: 30px;
+    margin-left: 15px;
     filter: brightness(100);
     opacity: .8;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 20px; 
+    background-color: var(--color-02-1);
+}
+
+.links button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-04);
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border: 1px solid #0a1f4b;
+    border-radius: 3px;
+}
+
+.links button:hover {
+    cursor: pointer;
+}
+
+.description {
+    background-color: var(--color-04-1);
+    margin: 0 0 0 0;
+}
+
+.description p{
+    color: var(--color-00);
+    opacity: .8;
+    padding: 15px;
+    margin: 0;
+    font-weight: 200;
+    letter-spacing: 1px;
 }

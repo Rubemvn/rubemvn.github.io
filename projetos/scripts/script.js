@@ -27,9 +27,6 @@ function openSection(id) {
 
 
 function createSectionProjects(id){
-    console.log(id)
-
-    console.log(description[id])
     extras.innerHTML = `
                 <div class="extraProjectSection" id="${id}Section">
                     <div class="imagesExtraSection">
@@ -60,7 +57,6 @@ function createSectionProjects(id){
 
 function closeSection(id){
 
-    console.log(id)
     let idSection = document.querySelector(`#${id}Section`)
     idSection.remove();
 

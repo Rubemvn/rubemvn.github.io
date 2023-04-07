@@ -31,7 +31,7 @@ body {
     scroll-behavior: smooth;
 
 
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 body {
@@ -102,7 +102,8 @@ a {
     padding: 0 10%;
     margin-bottom: 10rem;
     box-sizing: border-box;
-    filter: blur(3px);
+
+    /* filter: blur(3px); */
 }
 
 .navBarLogo {
@@ -139,8 +140,8 @@ a {
     grid-template: 1fr 1fr /1fr 1fr 1fr;
     row-gap: 40px;
     column-gap: 20px;
-    filter: blur(3px);
 
+    filter: none;
 }
 
 .project {
@@ -192,6 +193,7 @@ a {
 }
 
 .cover {
+    display: block;
     background-color: var(--color-02);
     opacity: .7;
     width: 100vw;
@@ -225,20 +227,30 @@ a {
 .extraProjectSection img {
     width: 500px;
     height: fit-content;
+    -webkit-box-shadow: inset 0px 0px 76px -28px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: inset 0px 0px 76px -28px rgba(0, 0, 0, 0.13);
+    box-shadow: inset 0px 0px 76px -28px rgba(0, 0, 0, 0.13);
 }
 
 .imagesExtraSection {
     position: relative;
 }
 
-#imgClose {
+#btnClose {
     position: absolute;
     top: 5px;
     right: 5px;
     padding: 0;
+    border: none;
+    background: none;
+
 }
 
-#imgClose img {
+#btnClose:hover {
+    cursor: pointer;
+}
+
+#btnClose img {
     width: 30px;
 }
 
@@ -267,7 +279,7 @@ a {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-left: 20px; 
+    padding-left: 20px;
     background-color: var(--color-02-1);
 }
 
@@ -292,11 +304,28 @@ a {
     margin: 0 0 0 0;
 }
 
-.description p{
+.description p {
     color: var(--color-00);
     opacity: .8;
     padding: 15px;
     margin: 0;
     font-weight: 200;
     letter-spacing: 1px;
+}
+
+
+
+.footer {
+    background-color: var(--color-04);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer p {
+    opacity: .8;
+    font-weight: 200;
 }

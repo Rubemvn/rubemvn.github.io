@@ -47,15 +47,17 @@
         </nav>
 
         <section class="sectionProjects">
-            <div class="cover"></div>
+
+            
+            <div class="cover" style="display: none;"></div>
             <div class="extras">
 
                 <div class="extraProjectSection" id="calculadoraSection">
-                    <div class="imagesExtraSection">
+                    <!-- <div class="imagesExtraSection">
                         <img src="./images/previews/calculadora.png" alt="">
-                        <div id="imgClose">
+                        <button id="btnClose">
                             <img src="./images/icons/close.png" alt="">
-                        </div>
+                        </button>
                     </div>
                     <div class="title">
                         <h3>Calculadora</h3>
@@ -74,9 +76,11 @@
                     <div class="links">
                         <button onclick="buttonGithub('calculadora')"><img style="width: 30px;" src="./images/icons/github.png" alt=""></button>
                         <button onclick="buttonLink('calculadora')"><img style="width: 20px;" src="./images/icons/link.png" alt=""></button>
-                    </div>
+                    </div> -->
                 </div>
-<!-- 
+                
+
+            <!-- 
                 <div class="extraProjectSection" id="jogo-da-memoriaSection">
                     <div class="imagesExtraSection">
                         <img src="./images/previews/calculadora.png" alt="">
@@ -232,43 +236,47 @@
                         <button onclick="buttonGithub()"><img style="width: 30px;" src="./images/icons/github.png" alt=""></button>
                         <button onclick="buttonLink()"><img style="width: 20px;" src="./images/icons/link.png" alt=""></button>
                     </div>
-                </div> -->
-
+                </div> 
+-->
 
             </div>
 
             <div class="projects" id="projetos">
-                <div class="project" onclick="teste('calculadora')" id="calculadora">
+                <div class="project" onclick="openSection('calculadora')" id="calculadora">
                     <img src="./images/previews/calculadora.png" alt="">
                     <h3>Calculadora</h3>
                 </div>
-                <div class="project" onclick="teste('jogo-da-memoria')" id="jogo-da-memoria">
+                <div class="project" onclick="openSection('jogo-da-memoria')" id="jogo-da-memoria">
                     <img src="./images/previews/jogo-da-memoria.png" alt="">
                     <h3>Jogo da Memória</h3>
                 </div>
-                <div class="project" onclick="teste('jogo-da-velha')" id="jogo-da-velha">
+                <div class="project" onclick="openSection('jogo-da-velha')" id="jogo-da-velha">
                     <img src="./images/previews/jogo-da-velha.png" alt="">
                     <h3>Jogo da Velha</h3>
                 </div>
-                <div class="project" onclick="teste('portifolio')" id="portifolio">
+                <div class="project" onclick="openSection('portifolio')" id="portifolio">
                     <img src="./images/previews/portifolio.png" alt="">
                     <h3>Portifólio</h3>
                 </div>
-                <div class="project" onclick="teste('contador')" id="contador">
+                <div class="project" onclick="openSection('contador')" id="contador">
                     <img src="./images/previews/contador.png" alt="">
                     <h3>Contador</h3>
                 </div>
-                <div class="project" onclick="teste('copia-youtube')" id="copia-youtube">
+                <div class="project" onclick="openSection('copia-youtube')" id="copia-youtube">
                     <img src="./images/previews/copia-youtube.png" alt="">
                     <h3>Cópia do Youtube</h3>
                 </div>
-                <div class="project" onclick="teste('mural-de-posts')" id="mural-de-posts">
+                <div class="project" onclick="openSection('mural-de-posts')" id="mural-de-posts">
                     <img src="./images/previews/mural-de-posts.png" alt="">
                     <h3>Mural de posts</h3>
                 </div>
 
             </div>
         </section>
+
+        <footer class="footer">
+            <p>© rubemvieira - Todos os direitos reservados</p>
+        </footer>
     </div>
 
     <script src="../scripts/menu.js"></script>

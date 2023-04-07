@@ -28,6 +28,9 @@ body {
     display: flex;
     justify-content: center;
     scroll-behavior: smooth;
+
+
+    /* overflow: hidden; */
 }
 
 body {
@@ -98,7 +101,7 @@ a {
     padding: 0 10%;
     margin-bottom: 10rem;
     box-sizing: border-box;
-
+    /* opacity: 0.2; */
 }
 
 .navBarLogo {
@@ -128,3 +131,123 @@ a {
 }
 
 /* navBar SECTION END*/
+
+/* projects SECTION*/
+.projects {
+    display: grid;
+    grid-template: 1fr 1fr /1fr 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 20px;
+    /* opacity: .2; */
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    /* width: 300px; */
+    /* height: 180px; */
+    box-shadow: 0px 5px 20px #0000005e;
+    background-color: var(--color-04);
+}
+
+
+.project img {
+    width: 300px;
+    /* margin: 0 0 2px 0; */
+}
+
+.project h3 {
+    display: flex;
+    color: var(--color-00);
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0;
+    padding-left: 10px;
+    opacity: 0.6;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+.project:after {
+    content: "";
+    position: absolute;
+    width: 4500px;
+    height: auto;
+    background-color: #0CF;
+    opacity: 0;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: -1;
+    transition-timing-function: alternate;
+}
+
+.project:hover {
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}
+
+.project:hover::after {
+    opacity: 1;
+}
+
+.cover {
+    background-color: var(--color-02);
+    opacity: .5;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    ;
+}
+
+.extras {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.extraProjectSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: absolute;
+    /* top: 80; */
+    top: -100px;
+    margin: auto;
+    width: 500px;
+    height: 600px;
+    background-color: var(--color-06);
+    z-index: 2;
+}
+
+.extraProjectSection img {
+    width: 500px;
+    height: fit-content;
+}
+
+.title {
+    background-color: var(--color-02);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+}
+
+.extraProjectSection h3 {
+    font-size: 3.2rem;
+    font-weight: 300;
+    opacity: .8;
+}
+
+.title div img {
+    width: 35px;
+    margin-left: 10px;
+    filter: brightness(100);
+    opacity: .8;
+}

@@ -3,6 +3,10 @@ function redirectToGithub() {
     window.open("https://github.com/Rubemvn");
 }
 
+function openCV(){
+    window.open("../assets/docs/Curriculo Rúbem Vieira.pdf")
+}
+
 let enableVanillaTilt = () => {
     const width = window.screen.width;
     let skills = document.querySelector(".skills")

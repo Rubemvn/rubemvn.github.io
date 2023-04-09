@@ -146,7 +146,7 @@ a {
     margin-bottom: 1rem;
 }
 
-.welcomeButtons{
+.welcomeButtons {
     display: flex;
 }
 
@@ -471,17 +471,20 @@ form input:focus {
 
 /* footer */
 footer {
+    background-color: var(--color-02-1);
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     padding: 15px 0;
-    background-color: var(--color-02-1);
 }
 
 footer p {
     color: var(--color-00-1);
     font-weight: 100;
     text-align: center;
+    opacity: .6;
 }
 
 /* footer END*/
@@ -580,11 +583,12 @@ footer p {
     }
 
 
+    /* MENU TOGGLE */
+
     .navBarOptions {
         display: none;
     }
 
-    /* MENU TOGGLE */
     .menuToggle {
         width: 40px;
         height: 40px;
@@ -700,7 +704,6 @@ footer p {
 
 }
 
-@media screen and (max-width: 520px) {
-    
-}
+@media screen and (max-width: 520px) {}
+
 /* MEDIA SCREEN END*/

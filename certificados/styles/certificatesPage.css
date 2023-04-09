@@ -29,9 +29,6 @@ body {
     display: flex;
     justify-content: center;
     scroll-behavior: smooth;
-    /* flex-direction: column; */
-
-    /* overflow: hidden; */
 }
 
 body {
@@ -96,6 +93,7 @@ a {
     padding: 0 10%;
     margin-bottom: 10rem;
     box-sizing: border-box;
+
 }
 
 .navBarLogo {
@@ -126,179 +124,87 @@ a {
 
 /* navBar SECTION END*/
 
-/* projects SECTION*/
 
-.sectionProjects h2 {
+/* Certificates SECTION */
+.certificatesSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.certificatesSection h2 {
     font-family: 'Kanit', sans-serif;
     font-size: 5rem;
     color: #9e3838;
-    text-align: center;
     margin: 0 0 40px 0;
 }
 
-.projects {
+.certificates {
+    background-color: var(--color-04);
+    width: 80%;
+    padding: 5%;
     display: grid;
-    grid-template: 1fr 1fr /1fr 1fr 1fr;
-    row-gap: 40px;
-    column-gap: 20px;
-
-    filter: none;
+    grid-template: 1fr 1fr/ 1fr 1fr;
+    row-gap: 60px;
+    column-gap: 60px;
 }
 
-.project {
+.certificate {
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 5px 20px #0000005e;
-    background-color: var(--color-04);
+    justify-content: center;
+    transition: all 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-
-.project img {
-    width: 300px;
-}
-
-.project h3 {
-    display: flex;
-    color: var(--color-00);
-    font-size: 2rem;
-    font-weight: 300;
-    margin: 0;
-    padding-left: 10px;
-    opacity: 0.6;
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-
-.project:after {
-    content: "";
-    position: absolute;
-    width: 4500px;
-    height: auto;
-    background-color: #0CF;
-    opacity: 0;
-    border-radius: 5px;
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    z-index: -1;
-}
-
-.project:hover {
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transform: scale(1.1, 1.1);
-    cursor: pointer;
-}
-
-.project:hover::after {
-    opacity: 1;
-}
-
-.cover {
-    display: block;
-    background-color: var(--color-02);
-    opacity: .7;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
+.certificate:hover {
+    scale: 1.05;
+    -webkit-box-shadow: 0px 10px 210px -1px rgba(0, 0, 0, 0.72);
+    -moz-box-shadow: 0px 10px 210px -1px rgba(0, 0, 0, 0.72);
+    box-shadow: 0px 10px 210px -1px rgba(0, 0, 0, 0.72);
     z-index: 1;
 }
 
-.extras {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.certificate img {
     width: 100%;
-}
-
-.extraProjectSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    position: fixed;
-    top: 100px;
-    margin: 0px;
-    width: 500px;
-    background-color: var(--color-04);
-    z-index: 2;
-}
-
-.extraProjectSection img {
-    width: 500px;
-    height: fit-content;
-    -webkit-box-shadow: inset 0px 0px 76px -28px rgba(0, 0, 0, 0.13);
-    -moz-box-shadow: inset 0px 0px 76px -28px rgba(0, 0, 0, 0.13);
-    box-shadow: inset 0px 0px 76px -28px rgba(0, 0, 0, 0.13);
-}
-
-.imagesExtraSection {
-    position: relative;
-}
-
-.title {
-    background-color: var(--color-02);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 50px;
-}
-
-.extraProjectSection h3 {
-    font-size: 3rem;
-    font-weight: 300;
-    opacity: .8;
-}
-
-.title div img {
-    width: 25px;
-    margin-left: 15px;
-    filter: brightness(100);
-    opacity: .8;
-}
-
-.links {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-left: 20px;
-    background-color: var(--color-02-1);
-}
-
-.links button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-04);
-    width: 40px;
-    height: 40px;
-    margin: 5px;
-    border: 1px solid #0a1f4b;
-    border-radius: 3px;
-}
-
-.links button:hover {
-    cursor: pointer;
-}
-
-.description {
-    background-color: var(--color-04-1);
-    margin: 0 0 0 0;
-}
-
-.description p {
-    color: var(--color-00);
-    opacity: .8;
-    padding: 15px;
     margin: 0;
-    font-weight: 200;
-    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 10px 14px -7px rgba(0, 0, 0, 0.11);
+    -moz-box-shadow: 0px 10px 14px -7px rgba(0, 0, 0, 0.11);
+    box-shadow: 0px 10px 14px -7px rgba(0, 0, 0, 0.11);
+    z-index: 1;
 }
 
-/* projects SECTION END */
+.certificate div {
+    background-color: var(--color-04-1);
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.certificate div h3 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: var(--color-06);
+    font-weight: 400;
+    padding-left: 20px;
+}
 
-/* Rodapé END */
+.certificate div a img {
+    display: none;
+    opacity: .7;
+    width: 30px;
+}
+
+.certificate:hover div a img {
+    display: block;
+}
+
+/* Certificates SECTION END */
+
+/* Roda pé */
 .footer {
     background-color: var(--color-02-1);
     width: 100%;
@@ -317,44 +223,43 @@ a {
     text-align: center;
 }
 
+
 /* RESPONSIVIDADE */
+@media screen and (max-width: 1100px) {
+    .certificate div h3 {
+        font-size: 2.2rem;
+    }
+}
 
 @media screen and (max-width: 1000px) {
-    .projects {
-        grid-template: 1fr 1fr / 1fr 1fr;
-        row-gap: 40px;
-        column-gap: 80px;
+    .certificate div h3 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .certificate div h3 {
+        font-size: 1.5rem;
     }
 
-    .extraProjectSection {
-        top: 200px;
+    .certificate div a img {
+        width: 25px;
     }
 }
 
 @media screen and (max-width: 768px) {
-
-    .projects {
-        grid-template: 1fr 1fr / 1fr;
-        row-gap: 20px;
-        column-gap: 40px;
+    .certificate div h3 {
+        font-size: 2rem;
     }
 
-    .extraProjectSection {
-        top: 150px;
-        scale: .95;
-    }
-
-    .title h3,
-    .title div {
-        scale: 1.1;
-    }
-
-    .description p {
-        font-size: 2rem
-    }
-
-    .links button {
-        scale: 1.1;
+    .certificates {
+        background-color: var(--color-04);
+        width: 60%;
+        padding: 10%;
+        display: grid;
+        grid-template: 1fr 1fr/1fr;
+        row-gap: 60px;
+        column-gap: 60px;
     }
 
     /* MENU TOGGLE */
@@ -430,63 +335,62 @@ a {
         transform: rotate(-45deg) translate(10px, -10px);
     }
 
+    .certificate div a img {
+        width: 30px;
+    }
+
     /* MENU TOGGLE END */
 
 }
 
-@media screen and (max-width: 530px) {
-
-    .extraProjectSection {
-        scale: .8;
+@media screen and (max-width: 600px) {
+    .certificate div {
+        padding: 5px;
     }
 
-    .title {
-        padding: 10px 0;
+    .certificate div h3 {
+        font-size: 1.8rem;
     }
 
-    .title h3,
-    .title div {
-        scale: 1.2;
-    }
-
-    .description p {
-        font-size: 2.3rem
-    }
-
-    .links button {
-        scale: 1.3;
-        margin: 10px;
+    .certificate div a img {
+        width: 25px;
     }
 }
 
-@media screen and (max-width: 460px) {
-
-    .extraProjectSection {
-        top: 125px;
-        scale: .7;
-    }
-
-    .description p {
-        font-size: 2.5rem
-    }
-
-    .links button {
-        scale: 1.4;
-        margin: 10px;
+@media screen and (max-width: 520px) {
+    .certificate div h3 {
+        font-size: 1.5rem;
     }
 }
 
-@media screen and (max-width: 390px) {
-
-    .extraProjectSection {
-        scale: .6;
-    }
-    .description p {
-        font-size: 2.7rem
+@media screen and (max-width: 430px) {
+    .certificate div h3 {
+        font-size: 1.3rem;
     }
 
-    .links button {
-        scale: 1.6;
-        margin: 20px;
+    .certificate div a img {
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .certificate div h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .certificate div h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .certificate div h3 {
+        font-size: 1.0rem;
+    }
+
+    .certificate div a img {
+        width: 15px;
     }
 }

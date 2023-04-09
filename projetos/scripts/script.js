@@ -89,7 +89,7 @@ function closeSection() {
 
 function buttonGithub(id) {
     if (id == "portifolio") {
-        window.open(`https://github.com/Rubemvn/rubemvn.github.io`);
+        window.open("https://github.com/Rubemvn/rubemvn.github.io");
     } else {
         window.open(`https://github.com/Rubemvn/${id}`);
     }
@@ -97,6 +97,8 @@ function buttonGithub(id) {
 function buttonLink(id) {
     if (id == "mural-de-posts") {
         window.open(`https://github.com/Rubemvn/${id}`);
+    } else if(id == "portifolio"){
+        window.open("https://rubemvn.github.io/");
     } else {
         window.open(`https://rubemvn.github.io/${id}`);
     }

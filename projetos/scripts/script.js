@@ -26,9 +26,7 @@ let titleProject = {
 
 function openSection(id) {
 
-    window.
-
-        document.body.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
     navbar.style.filter = "blur(3px)"
     projects.style.filter = "blur(3px)"
     cover.style.display = "block"
@@ -43,9 +41,6 @@ function createSectionProjects(id) {
                 <div class="extraProjectSection" id="${id}Section">
                     <div class="imagesExtraSection">
                         <img src="./images/previews/${id}.png" alt="">
-                        <button id="btnClose" onclick="closeSection()">
-                            <img src="./images/icons/close.png" alt="">
-                        </button>
                     </div>
                     <div class="title">
                         <h3>${titleProject[id]}</h3>

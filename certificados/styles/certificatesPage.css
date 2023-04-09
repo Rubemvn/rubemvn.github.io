@@ -248,6 +248,15 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+    .navBar {
+        margin-bottom: 5rem;
+        align-items: center;
+    }
+
+    .navBarLogo img {
+        width: 40px;
+    }
+
     .certificate div h3 {
         font-size: 2rem;
     }

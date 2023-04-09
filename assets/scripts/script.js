@@ -1,12 +1,32 @@
 
-function redirectToGithub(){
+function redirectToGithub() {
     window.open("https://github.com/Rubemvn");
 }
 
-VanillaTilt.init(document.querySelector(".vanillaTilt"), {
-    max: 25,
-    speed: 400
-});
+let enableVanillaTilt = () => {
+    const width = window.screen.width;
+    let skills = document.querySelector(".skills")
 
-//It also supports NodeList
-VanillaTilt.init(document.querySelectorAll(".vanillaTilt"));
+    if (width >= 1000) {
+        for (let i = 0; i < skills.children.length; i++) {
+            skills.children[i].classList.add("vanillaTilt")
+        }
+    } else {
+        for (let i = 0; i < skills.children.length; i++) {
+            skills.children[i].classList.value = "cardiAm"
+        }
+
+    }
+}
+
+
+setTimeout(() => {
+    VanillaTilt.init(document.querySelector(".vanillaTilt"), {
+        max: 25,
+        speed: 400
+    });
+
+    //It also supports NodeList
+    VanillaTilt.init(document.querySelectorAll(".vanillaTilt"));
+}, 2000);
+

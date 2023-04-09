@@ -317,6 +317,14 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+    .navBar {
+        margin-bottom: 5rem;
+        align-items: center;
+    }
+
+    .navBarLogo img {
+        width: 40px;
+    }
 
     .projects {
         grid-template: 1fr 1fr / 1fr;
@@ -466,6 +474,7 @@ a {
     .extraProjectSection {
         scale: .6;
     }
+
     .description p {
         font-size: 2.7rem
     }

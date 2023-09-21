@@ -10,8 +10,10 @@ let description = {
   "portifolio": "Esse Portifolio foi desenvolvido em HTML, CSS, e Javascript. <br> Para conhecer mais do projeto, clique nos botões abaixo:",
   "contador": "Esse Contador foi desenvolvido em HTML, CSS, e Javascript. <br> Para conhecer mais do projeto, clique nos botões abaixo:",
   "copia-youtube": "Essa Copia do Youtube foi desenvolvida em HTML, CSS, e Javascript. <br> Para conhecer mais do projeto, clique nos botões abaixo:",
-  "mural-de-posts": "Esse Mural de Posts foi desenvolvido em Node.js, Javascript, Bootstrap 5 e HTML. <br> Para conhecer mais do projeto, clique nos botões abaixo:",
-  "accounts": "Esse projeto foi desenvolvido Node.js. <br> Para conhecer mais do projeto, clique nos botões abaixo:",
+  "mural-de-posts": "Esse Mural de Posts foi desenvolvido em NodeJs, Javascript, Bootstrap 5 e HTML. <br> Para conhecer mais do projeto, clique nos botões abaixo:",
+  "accounts": "Esse projeto foi desenvolvido em NodeJs. <br> Para conhecer mais do projeto, clique nos botões abaixo:",
+  "secret-word": "Secret Word é um jogo de adivinhação de palavras que foi feito em ReactJs. <br> Para conhecer mais do projeto, clique nos botões abaixo:",
+  "cenoura": "Cenoura é um site de votação SIMPLES com front e backend desenvolvido com ReactJs e NodeJs <br> Para conhecer mais do projeto, clique nos botões abaixo:"
 }
 
 let titleProject = {
@@ -23,6 +25,8 @@ let titleProject = {
   "copia-youtube": "Copia do Youtube",
   "mural-de-posts": "Mural de Posts",
   "accounts": "Accounts",
+  "secret-word": "Secret Word",
+  "cenoura": "Cenoura",
 
 }
 
@@ -84,6 +88,27 @@ function createSectionProjects(id) {
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" />
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
             `
+
+    if (id == "secret-word") {
+
+      let titleDivImg = document.querySelector(".title").lastElementChild;
+
+      titleDivImg.innerHTML = `            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+            `
+
+    }
+    if (id == "cenoura") {
+      let titleDivImg = document.querySelector(".title").lastElementChild;
+
+      titleDivImg.innerHTML = `
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+            `
+
+    }
   }
 }
 
@@ -113,6 +138,8 @@ function buttonLink(id) {
     window.open(`https://github.com/Rubemvn/${id}`);
   } else if (id == "portifolio") {
     window.open("https://rubemvn.github.io/");
+  } else if (id == "secret-word") {
+    window.open("https://secret-word-eta.vercel.app/");
   } else {
     window.open(`https://rubemvn.github.io/${id}`);
   }

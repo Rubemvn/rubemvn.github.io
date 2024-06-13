@@ -112,15 +112,6 @@ function createSectionProjects(id) {
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
             `;
 		}
-		if (id == "cenoura") {
-			let titleDivImg = document.querySelector(".title").lastElementChild;
-
-			titleDivImg.innerHTML = `
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
-            `;
-		}
 	}
 }
 
